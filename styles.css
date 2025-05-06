@@ -1,0 +1,69 @@
+body {
+    font-family: sans-serif;
+    margin: 0; /* Eliminar márgenes por defecto del body */
+    background-color: #f4f4f4; /* Un fondo gris claro */
+    color: #333; /* Texto oscuro */
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #5cb85c; /* Un verde agradable */
+    margin-bottom: 20px;
+}
+
+.seccion {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Una ligera sombra */
+}
+
+.campo {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: calc(100% - 16px); /* Ancho completo menos el padding */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+select {
+    appearance: none; /* Quitar estilos por defecto del select */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    padding-right: 30px; /* Espacio para la flecha */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
