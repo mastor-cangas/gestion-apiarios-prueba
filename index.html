@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Inspección Apiario</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        .seccion {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .campo {
+            margin-bottom: 8px;
+        }
+        label {
+            display: block;
+            margin-bottom: 3px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Inspección de Colmena</h1>
+
+    <div class="seccion">
+        <h2>Información de la Reina</h2>
+        <div class="campo">
+            <label for="puesta">Calidad de la Puesta:</label>
+            <select id="puesta">
+                <option value="">Seleccionar</option>
+                <option value="buena">Buena</option>
+                <option value="regular">Regular</option>
+                <option value="mala">Mala</option>
+            </select>
+        </div>
+        <div class="campo">
+            <label for="presenciaReina">Signos de Presencia de la Reina:</label>
+            <select id="presenciaReina">
+                <option value="">Seleccionar</option>
+                <option value="si">Sí (huevos, larvas)</option>
+                <option value="no">No</option>
+                <option value="dudoso">Dudoso</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <h2>Cámara de Cría</h2>
+        <div class="campo">
+            <label for="cuadrosCria">Número de Cuadros con Cría:</label>
+            <input type="number" id="cuadrosCria" min="0">
+        </div>
+        <div class="campo">
+            <label for="estadoCria">Estado de la Cría:</label>
+            <select id="estadoCria">
+                <option value="">Seleccionar</option>
+                <option value="compacta">Compacta</option>
+                <option value="discontinua">Discontinua</option>
+                <option value="operculada">Mayormente Operculada</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <h2>Alzas de Producción</h2>
+        <div class="campo">
+            <label for="alzasMiel">Número de Alzas con Miel:</label>
+            <input type="number" id="alzasMiel" min="0">
+        </div>
+        <div class="campo">
+            <label for="alzasPolen">Número de Alzas con Polen:</label>
+            <input type="number" id="alzasPolen" min="0">
+        </div>
+    </div>
+
+    <div class="seccion">
+        <h2>Estado General</h2>
+        <div class="campo">
+            <label for="agresividad">Agresividad:</label>
+            <select id="agresividad">
+                <option value="">Seleccionar</option>
+                <option value="docil">Dócil</option>
+                <option value="normal">Normal</option>
+                <option value="agresiva">Agresiva</option>
+            </select>
+        </div>
+        <div class="campo">
+            <label for="poblacion">Población de Abejas:</label>
+            <select id="poblacion">
+                <option value="">Seleccionar</option>
+                <option value="fuerte">Fuerte</option>
+                <option value="media">Media</option>
+                <option value="debil">Débil</option>
+            </select>
+        </div>
+    </div>
+
+    <button type="button">Guardar Inspección</button>
+
+</body>
+</html>
