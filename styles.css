@@ -1,30 +1,30 @@
 body {
     font-family: sans-serif;
-    margin: 20px; /* Añadimos un margen alrededor del formulario */
-    background-color: #f9f9f9; /* Un fondo gris muy claro, casi blanco */
+    margin: 20px;
+    background-color: #f9f9f9; /* Fondo gris muy claro */
     color: #333;
     line-height: 1.6;
 }
 
 h1 {
     text-align: center;
-    color: #2e7d32; /* Un verde más oscuro y elegante */
-    margin-bottom: 30px; /* Más espacio debajo del título */
-    font-size: 2.2em; /* Un tamaño de fuente más grande */
-    font-weight: bold; /* Texto en negrita */
+    color: #2e7d32; /* Verde oscuro */
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: bold;
 }
 
 .seccion {
     background-color: #fff;
-    padding: 20px; /* Más espacio dentro de las secciones */
+    padding: 20px;
     margin-bottom: 20px;
-    border-radius: 10px; /* Bordes más redondeados */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Sombra más suave */
-    border: 1px solid #e0e0e0; /* Borde sutil */
+    border-radius: 15px; /* Bordes más redondeados para las secciones */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Sombra suave */
+    border: 1px solid #e0e0e0;
 }
 
 .campo {
-    margin-bottom: 18px; /* Más espacio entre los campos */
+    margin-bottom: 18px;
 }
 
 label {
@@ -38,13 +38,13 @@ label {
 input[type="text"],
 input[type="number"],
 select {
-    width: calc(100% - 20px); /* Ancho completo con espacio para el padding y el borde */
+    width: calc(100% - 24px); /* Ajustar ancho para el padding */
     padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 6px;
+    border-radius: 8px; /* Bordes redondeados para los campos */
     box-sizing: border-box;
     font-size: 1em;
-    margin-bottom: 5px; /* Pequeño espacio debajo de los inputs/selects */
+    margin-bottom: 10px; /* Más espacio debajo de los campos */
 }
 
 select {
@@ -53,21 +53,22 @@ select {
     background-repeat: no-repeat;
     background-position: right 15px center;
     background-size: 18px;
-    padding-right: 35px; /* Más espacio para la flecha */
+    padding-right: 35px;
 }
 
 button {
     display: block;
     width: 100%;
     padding: 14px;
-    background-color: #4caf50; /* Un verde más moderno */
+    background-color: #4caf50; /* Verde moderno */
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px; /* Bordes redondeados para el botón */
     cursor: pointer;
     font-size: 1.1em;
     transition: background-color 0.3s ease;
     font-weight: bold;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Ligera sombra en el botón */
 }
 
 button:hover {
